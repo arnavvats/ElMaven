@@ -1,6 +1,9 @@
 #include "peakdetectorcli.h"
 
 int main(int argc, char *argv[]) {
+    QCoreApplication app(argc, argv);
+    qApp->setOrganizationName("Elucidata");
+    qApp->setApplicationName("El-MAVEN CLI");
 
 	// setting nodepath and jspath for PollyCLI library..
 	QStringList jsPathlist = QString(argv[0]).split(QDir::separator());
